@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- container header navbar -->
+    <header class="sticky top-0 w-full z-40">
+      <!-- navbar1 -->
+      <nav
+        class="hidden lg:flex h-6 w-full bg-[#141487] justify-between text-gray-300 text-xs place-items-center">
+        <h1 class="mx-2 lg:mx-24 uppercase font-bold text-white">
+          play for free <span class="capitalize">@ gameshop</span>
+        </h1>
+        <ul class="flex flex-row justify-between place-items-center lg:mx-24">
+          <li class="px-1 lg:px-7 hover:text-white duration-300">
+            <a href="">about</a>
+          </li>
+          <li class="px-1 lg:px-7 hover:text-white duration-300">
+            <a href="">how to buy</a>
+          </li>
+          <li class="px-1 lg:px-7 hover:text-white duration-300">
+            <a href="">contact</a>
+          </li>
+          <li class="flex flex-row gap-3 place-items-center">
+            <a href=""
+              ><img
+                class="w-5 opacity-60 hover:opacity-100 duration-300"
+                src="./assets/facebook.png.png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="w-5 opacity-60 hover:opacity-100 duration-300"
+                src="./assets/instagram.png.png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="w-5 opacity-60 hover:opacity-100 duration-300"
+                src="./assets/youtube.png.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- navbar2 -->
+      <nav
+        class="flex h-24 text-xl font-bold text-gray-400 bg-gradient-to-r from-[#001f52] via-[#001f52] to-[#000000] uppercase flex-row justify-between place-items-center">
+        <!-- brand -->
+        <a class="mx-2 lg:mx-24 text-white" href="">
+          <h1>gameshop</h1>
+        </a>
+        <!-- item menu search dll -->
+        <div class="flex flex-row place-items-center justify-center">
+          <!-- container search -->
+          <div class="flex flex-col justify-center place-items-center">
+            <div class="flex justify-around place-items-center w-full">
+              <input
+                class="h-10 w-full"
+                type="search"
+                placeholder="search"
+                name="cari"
+                id="" />
+              <button class="bg-gray-700 w-10 h-10" type="submit">
+                <svg
+                  class="place-items-center m-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <!-- cont.menu -->
+            <ul class="hidden lg:flex flex-row gap-7">
+              <li
+                class="underline-offset-8 hover:text-white hover:underline duration-300">
+                <a href="">shop all</a>
+              </li>
+              <li
+                class="underline-offset-8 hover:text-white hover:underline duration-300">
+                <a href="">new release</a>
+              </li>
+              <li
+                class="underline-offset-8 hover:text-white hover:underline duration-300">
+                <a href="">coming soon</a>
+              </li>
+            </ul>
+          </div>
+          <!-- parent buttonmenu, keranjang & profile -->
+          <ul
+            class="mx-2 lg:mx-24 flex place-items-center flex-col lg:flex-row">
+            <!-- logo menu responsive -->
+            <li
+              class="lg:hidden opacity-60 hover:opacity-100 duration-300 place-content-center">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </li>
+            <li class="flex flex-row gap-3 place-items-center">
+              <!-- logo keranjang -->
+              <a class="opacity-60 hover:opacity-100 duration-300 w-7" href=""
+                ><img src="./assets/keranjang.png.png" alt=""
+              /></a>
+              <!-- logo profile -->
+              <a
+                class="hidden lg:flex opacity-60 hover:opacity-100 duration-300 w-7"
+                href=""
+                ><img src="./assets/profil.png.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <div
+      id="carouselExampleIndicators"
+      class="relative"
+      data-te-carousel-init
+      data-te-carousel-slide>
+      <!--Carousel indicators-->
+      <div
+        class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+        data-te-carousel-indicators>
+        <button
+          type="button"
+          data-te-target="#carouselExampleIndicators"
+          data-te-slide-to="0"
+          data-te-carousel-active
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-te-target="#carouselExampleIndicators"
+          data-te-slide-to="1"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          aria-label="Slide 2"></button>
+        <button
+          type="button"
+          data-te-target="#carouselExampleIndicators"
+          data-te-slide-to="2"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-te-target="#carouselExampleIndicators"
+          data-te-slide-to="3"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          aria-label="Slide 4"></button>
+      </div>
+
+      <!--Carousel items-->
+      <div
+        class="relative h-[450px] w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <!--First item-->
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[400ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+          data-te-carousel-active>
+          <img src="./assets/1.jpg" class="block w-full" alt="COD WarFare" />
+        </div>
+        <!--Second item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[400ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img src="./assets/2.jpg" class="block w-full" alt="Game 2" />
+        </div>
+        <!--Third item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[400ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img src="./assets/3.jpg" class="block w-full" alt="Exotic Fruits" />
+        </div>
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[400ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img src="./assets/4.jpg" class="block w-full" alt="Exotic Fruits" />
+        </div>
+      </div>
+      <!--Carousel controls - prev item-->
+      <button
+        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleIndicators"
+        data-te-slide="prev">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Previous</span
+        >
+      </button>
+      <!--Carousel controls - next item-->
+      <button
+        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleIndicators"
+        data-te-slide="next">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Next</span
+        >
+      </button>
+    </div>
+    <div
+      class="py-8 px-16 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+      <img
+        src="./assets/first hero.jpg"
+        alt="All game"
+        class="relative h-[450px] w-full object-none" />
+    </div>
+
+    <!-- product list -->
+    <section class="mt-5 rounded-lg">
+      <div class="flex">
+        <div
+          class="container mx-auto px-5 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly sm:bg-white lg:gap-0 overflow-hidden mb-10 w-full py-5 mt-7">
+          <div class="w-auto flex items-center justify-center">
+            <div class="w-full text-right">
+              <button
+                class="p-3 rounded-full bg-white border border-gray-100 shadow-lg">
+                <svg
+                  class="h-6 w-6"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="2"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecaps="round"
+                    stroke-linejoin="round"
+                    d="M0.922142 10.2838C0.346009 10.879 0.361535 11.8287 0.956818 12.4048L10.6575 21.7934C11.2528 22.3695 12.2024 22.354 12.7786 21.7587C13.3547 21.1635 13.3392 20.2138 12.7439 19.6377L4.12104 11.2923L12.4665 2.6694C13.0426 2.07412 13.0271 1.1245 12.4318 0.548366C11.8365 -0.0277668 10.8869 -0.0122417 10.3108 0.583042L0.922142 10.2838ZM21.9728 9.5002L1.97548 9.82713L2.02452 12.8267L22.0218 12.4998L21.9728 9.5002Z"
+                    fill="black" />
+                  d="M0.922142 10.2838C0.346009 10.879 0.361535 11.8287 0.956818
+                  12.4048L10.6575 21.7934C11.2528 22.3695 12.2024 22.354 12.7786
+                  21.7587C13.3547 21.1635 13.3392 20.2138 12.7439
+                  19.6377L4.12104 11.2923L12.4665 2.6694C13.0426 2.07412 13.0271
+                  1.1245 12.4318 0.548366C11.8365 -0.0277668 10.8869 -0.0122417
+                  10.3108 0.583042L0.922142 10.2838ZM21.9728 9.5002L1.97548
+                  9.82713L2.02452 12.8267L22.0218 12.4998L21.9728 9.5002Z"
+                  fill="black" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border border-black-100 shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-52">
+            <img src="./assets/asv.png" alt="Assasin" class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-slate-700">
+                Assassins Creed Valhalla
+              </div>
+
+              <!-- rating -->
+              <span class="flex items-center mt-1">
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star-half-fill.svg" alt="" />
+                <img src="./assets/star-no-fill.svg" alt="" />
+                <span class="text-xs ml-2 text-gray-500"> 20k reviews </span>
+              </span>
+              <div>
+                <span class="text-xl font-bold">Harga Rp. 300.000</span>
+              </div>
+              <button
+                class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border border-black-100 shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-52">
+            <img src="./assets/gow.png" alt="Assasin" class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-slate-700">
+                God Of War Ragnarok
+              </div>
+
+              <!-- rating -->
+              <span class="flex items-center mt-1">
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star-half-fill.svg" alt="" />
+                <img src="./assets/star-no-fill.svg" alt="" />
+                <span class="text-xs ml-2 text-gray-500"> 20k reviews </span>
+              </span>
+              <div>
+                <span class="text-xl font-bold">Harga Rp. 300.000</span>
+              </div>
+              <button
+                class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border border-black-100 shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-52">
+            <img src="./assets/gtav.png" alt="Assasin" class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-slate-700">
+                Grand Theft Auto 5
+              </div>
+
+              <!-- rating -->
+              <span class="flex items-center mt-1">
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star-half-fill.svg" alt="" />
+                <img src="./assets/star-no-fill.svg" alt="" />
+                <span class="text-xs ml-2 text-gray-500"> 20k reviews </span>
+              </span>
+              <div>
+                <span class="text-xl font-bold">Harga Rp. 300.000</span>
+              </div>
+              <button
+                class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border border-black-100 shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-52">
+            <img src="./assets/rdr2.png" alt="Assasin" class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-slate-700">
+                Red Dead Redemption 2
+              </div>
+
+              <span class="flex items-center mt-1">
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star-half-fill.svg" alt="" />
+                <img src="./assets/star-no-fill.svg" alt="" />
+                <span class="text-xs ml-2 text-gray-500"> 20k reviews </span>
+              </span>
+              <div>
+                <span class="text-xl font-bold">Harga Rp. 300.000</span>
+              </div>
+              <button
+                class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded-md border border-black-100 shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-52">
+            <img src="./assets/re4.png" alt="Assasin" class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 text-slate-700">
+                Resident Evil 4 <br /><br />
+              </div>
+
+              <span class="flex items-center mt-1">
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star.svg" alt="" />
+                <img src="./assets/star-half-fill.svg" alt="" />
+                <img src="./assets/star-no-fill.svg" alt="" />
+                <span class="text-xs ml-2 text-gray-500"> 20k reviews </span>
+              </span>
+              <div>
+                <span class="text-xl font-bold">Harga Rp. 300.000</span>
+              </div>
+              <button
+                class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold">
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="w-auto flex items-center">
+            <div class="w-full">
+              <button
+                class="p-3 rounded-full bg-white border border-gray-100 shadow-lg">
+                <svg
+                  class="h-6 w-6"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="2"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecaps="round"
+                    stroke-linejoin="round"
+                    d="M22.0593 12.2241C22.6451 11.6383 22.6451 10.6886 22.0593 10.1028L12.5134 0.556866C11.9276 -0.0289207 10.9778 -0.0289207 10.3921 0.556866C9.80627 1.14265 9.80627 2.0924 10.3921 2.67819L18.8773 11.1635L10.3921 19.6487C9.80627 20.2345 9.80627 21.1843 10.3921 21.7701C10.9778 22.3559 11.9276 22.3559 12.5134 21.7701L22.0593 12.2241ZM0.998661 12.6635H20.9987V9.66347H0.998661V12.6635Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER START -->
+    <section id="footer" class="bg-[#070221] text-white pt-14 pb-6">
+      <div
+        class="bagian1 flex justify-center pb-6 mx-32 max-[768px]:flex-col max-[768px]:text-center max-[768px]:mx-16">
+        <!-- bagian about -->
+        <div id="b1a" class="ml-auto mr-0 max-[768px]:pb-6">
+          <h1
+            class="font-bold text-xl pb-2 max-[1024px]:text-lg max-[768px]:text-base">
+            About Gameshop
+          </h1>
+          <p class="text-neutral-400 max-[1024px]:text-sm max-[768px]:text-xs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Omnis minima ipsum dicta cum repellendus molestiae commodi sapiente
+            animi, fugit cumque rerum magnam vitae. Commodi, eveniet. Reiciendis
+            reprehenderit voluptate odio assumenda.
+          </p>
+        </div>
+
+        <!-- link list informasi client -->
+        <div id="b1b" class="mx-0 px-20 max-[768px]:px-0 max-[768px]:pb-6">
+          <div>
+            <h1
+              class="block font-bold text-xl pb-2 pr-10 max-[1024px]:pr-0 max-[1024px]:text-lg max-[768px]:text-base max-[768px]:pb-1">
+              Resources
+            </h1>
+          </div>
+          <div class="flex justify-between max-[1024px]:flex-col">
+            <div
+              class="pr-5 mr-5 w-40 max-[1024px]:pr-0 max-[1024px]:mr-0 max-[768px]:w-auto">
+              <ul
+                class="text-sm leading-loose font-semibold text-neutral-300 max-[1024px]:text-xs">
+                <li class="border-b-2 border-neutral-500 py-2 hover:text-white">
+                  <a href="#">ABOUT</a>
+                </li>
+                <li class="border-b-2 border-neutral-500 py-2 hover:text-white">
+                  <a href="#">FAQ</a>
+                </li>
+                <li class="border-b-2 border-neutral-500 py-2 hover:text-white">
+                  <a href="#">HOW TO BUY</a>
+                </li>
+                <li
+                  class="py-1 hover:text-white max-[1024px]:border-b-2 max-[1024px]:border-neutral-500">
+                  <a href="#">TIPS & TUTORIALS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-40 max-[768px]:w-auto">
+              <ul
+                class="text-sm leading-loose font-semibold text-neutral-300 max-[1024px]:text-xs">
+                <li class="border-b-2 py-2 border-neutral-500 hover:text-white">
+                  <a href="#">COMMUNITY</a>
+                </li>
+                <li class="border-b-2 py-2 border-neutral-500 hover:text-white">
+                  <a href="#">TESTIMONIALS</a>
+                </li>
+                <li class="border-b-2 py-2 border-neutral-500 hover:text-white">
+                  <a href="#">TERMS & CONDITIONS</a>
+                </li>
+                <li class="py-1 hover:text-white">
+                  <a href="#">OUR PARTNER</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- bagian alamat -->
+        <div id="b1c" class="ml-0 mr-auto">
+          <div>
+            <h1
+              class="font-bold text-xl pb-2 max-[1024px]:text-lg max-[768px]:text-base">
+              Visit us
+            </h1>
+          </div>
+          <div>
+            <h2
+              class="font-bold text-neutral-300 max-[1024px]:text-base max-[768px]:text-sm">
+              Gameshop main office
+            </h2>
+            <p
+              class="text-neutral-400 max-[1024px]:text-sm max-[768px]:text-xs">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+              possimus nisi saepe magni cupiditate eius esse, perspiciatis
+              numquam rem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="bagian2 pt-14 max-[768px]:pt-0">
+        <div id="b2a" class="bagian2 flex w-full justify-center">
+          <div>
+            <h1
+              class="font-bold text-xl pb-2 max-[1024px]:text-lg max-[768px]:text-base">
+              How to connect with us
+            </h1>
+          </div>
+        </div>
+
+        <div id="b2b" class="py-10">
+          <div class="flex justify-center max-[768px]:flex-col">
+            <div class="flex justify-center mr-12 max-[768px]:mx-auto">
+              <a class="w-8 h-8 mr-32" href="#"
+                ><img src="assets/instagram.png" alt="instagram"
+              /></a>
+              <a class="w-8 h-8" href="#"
+                ><img src="assets/twitter.png" alt="twitter"
+              /></a>
+            </div>
+
+            <div
+              class="flex justify-center ml-32 max-[768px]:mx-auto max-[768px]:mt-14">
+              <a class="w-8 h-8 mr-32" href="#"
+                ><img src="assets/whatsapp.png" alt="whatsapp"
+              /></a>
+              <a class="w-8 h-8" href="#"
+                ><img src="assets/discord.png" alt="whatsapp"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright -->
+    <footer class="bg-[#040115] m-0 w-full h-24 pt-8">
+      <div class="flex justify-center">
+        <div
+          class="copyright text-neutral-500 font-bold max-[1024px]:text-sm max-[768px]:text-xs">
+          <p>2023 - Made by Kelompok 5</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTER END -->
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
